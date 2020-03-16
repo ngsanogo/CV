@@ -3,7 +3,7 @@ name: N'Gouro dit Issa SANOGO
 date: "`r format(Sys.time(), '%B, %Y')`"
 qualifications: MSc
 profilepic: profile.png
-position: Data Scientist
+position: Data Scientist/Développeur R
 address: "[Île-de-France](https://www.google.com/maps/place/%C3%8Ele-de-France/@48.6771669,1.3813937,8z/data=!3m1!4b1!4m5!3m4!1s0x47e5e1c403a68c17:0x10b82c3688b2570!8m2!3d48.8499198!4d2.6370411)"
 phone: +33 x xx xx xx xx
 email: ngsanogo@gmail.com
