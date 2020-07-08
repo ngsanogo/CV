@@ -4,8 +4,8 @@ date: "`r format(Sys.time(), '%B, %Y')`"
 qualifications: MSc
 profilepic: profile.png
 position: Data Scientist/Développeur R
-address: "[Île-de-France](https://www.google.com/maps/place/%C3%8Ele-de-France/@48.6771669,1.3813937,8z/data=!3m1!4b1!4m5!3m4!1s0x47e5e1c403a68c17:0x10b82c3688b2570!8m2!3d48.8499198!4d2.6370411)"
-phone: +33 x xx xx xx xx
+address: "[Bezons, Île-de-France](https://www.google.com/maps/place/95870+Bezons/data=!4m2!3m1!1s0x47e664161c8482d3:0x40b82c3688b35a0?sa=X&ved=2ahUKEwjapNGXk57oAhUHrxoKHYXADZcQ8gEwDHoECBkQBA)"
+phone: +33 7 51 47 79 25
 email: ngsanogo@gmail.com
 www: ngsanogo.rbind.io
 github: ngsanogo
@@ -31,16 +31,27 @@ tribble(
   "Data manager - Statisticien", "Assistance Publique – Hôpitaux de Paris (AP-HP)", "Boulogne-Billancourt, France", "Avril 2019 - Auj.", "Toutes mes missions de data manager",
   "Data manager - Statisticien", "Assistance Publique – Hôpitaux de Paris (AP-HP)", "Boulogne-Billancourt, France", "Avril 2019 - Auj.", "Rédaction de plan d'analyse statistique",
   "Data manager - Statisticien", "Assistance Publique – Hôpitaux de Paris (AP-HP)", "Boulogne-Billancourt, France", "Avril 2019 - Auj.", "Analyse statistique",
-  "Data manager", "Assistance Publique – Hôpitaux de Paris (AP-HP)", "Boulogne-Billancourt, France", "Sept. 2017 - Auj.", "Création d'eCRF",
-  "Data manager", "Assistance Publique – Hôpitaux de Paris (AP-HP)", "Boulogne-Billancourt, France", "Sept. 2017 - Auj.", "Développement d'algorithme de contrôle de cohérence en R",
-  "Data manager", "Assistance Publique – Hôpitaux de Paris (AP-HP)", "Boulogne-Billancourt, France", "Sept. 2017 - Auj.", "Développement de packages R",
-  "Data manager", "Assistance Publique – Hôpitaux de Paris (AP-HP)", "Boulogne-Billancourt, France", "Sept. 2017 - Auj.", "Développement d'application en Shiny",
-  "Data manager", "Assistance Publique – Hôpitaux de Paris (AP-HP)", "Boulogne-Billancourt, France", "Sept. 2017 - Auj.", "Reporting en Sweave (R + LaTeX)",
+  "Data manager", "Assistance Publique – Hôpitaux de Paris (AP-HP)", "Boulogne-Billancourt, France", "Sept. 2017 - Mars 2019", "Création d'eCRF",
+  "Data manager", "Assistance Publique – Hôpitaux de Paris (AP-HP)", "Boulogne-Billancourt, France", "Sept. 2017 - Mars 2019", "Développement d'algorithme de contrôle de cohérence en R",
+  "Data manager", "Assistance Publique – Hôpitaux de Paris (AP-HP)", "Boulogne-Billancourt, France", "Sept. 2017 - Mars 2019", "Développement de packages R",
+  "Data manager", "Assistance Publique – Hôpitaux de Paris (AP-HP)", "Boulogne-Billancourt, France", "Sept. 2017 - Mars 2019", "Développement d'application en Shiny",
+  "Data manager", "Assistance Publique – Hôpitaux de Paris (AP-HP)", "Boulogne-Billancourt, France", "Sept. 2017 - Mars 2019", "Reporting en Sweave (R + LaTeX)",
   "Data manager (stage de fin d’études)", "Assistance Publique – Hôpitaux de Paris (AP-HP)", "Boulogne-Billancourt, France", "Févr. 2017 - Août 2017", "Création d'eCRF",
   "Data manager (stage de fin d’études)", "Assistance Publique – Hôpitaux de Paris (AP-HP)", "Boulogne-Billancourt, France", "Févr. 2017 - Août 2017", "Développement d'algorithme de contrôle de cohérence en R",
-    "Data manager (stage de fin d’études)", "Assistance Publique – Hôpitaux de Paris (AP-HP)", "Boulogne-Billancourt, France", "Févr. 2017 - Août 2017", "Reporting en Sweave (R + LaTeX)"
+  "Data manager (stage de fin d’études)", "Assistance Publique – Hôpitaux de Paris (AP-HP)", "Boulogne-Billancourt, France", "Févr. 2017 - Août 2017", "Reporting en Sweave (R + LaTeX)"
 )  %>% 
   detailed_entries(with = company, where = loc, what = role, when = dates, why = details)
+```
+
+# Projets personnels
+
+```{r}
+tribble(
+  ~ degree, ~ uni, ~ loc, ~ dates, ~ details,
+  "Site web personnel fait avec le package R blogdown (https://github.com/ngsanogo/ngsanogo.rbind.io).", "ngsanogo.rbind.io", NA, NA, NA,
+  "Application Web en shiny en utilisant le package R Golem (https://github.com/ngsanogo/accidentApp).", "AccidentApp", NA, NA, NA
+) %>% 
+  detailed_entries(degree, dates, uni, loc, details)
 ```
 
 # Formations
@@ -59,8 +70,8 @@ tribble(
 ```{r}
 tribble(
   ~ type, ~ details,
-  "Compétences", "Mathématiques appliquées, statistique, programmation, data management, receuil de données.",
-  "Informatiques", "R, Python, C/C++, PostgreSQL/MySQL, Git, HTML/CSS, LaTeX, Limesurvey, RedCap, CleanWeb, Linux",
+  "Compétences", "Mathématiques appliquées, statistiques, programmation, data management, receuil de données.",
+  "Informatiques", "R, Python, C/C++, MySQL, Git, HTML/CSS, LaTeX, Limesurvey, RedCap, CleanWeb, Linux",
   "Langues", "Français, langue maternelle",
   "Langues", "Anglais, niveau intermédiaire (B2 CECR)"
 ) %>%
