@@ -3,7 +3,7 @@ name: N'Gouro dit Issa SANOGO
 date: "`r format(Sys.time(), '%B, %Y')`"
 qualifications: MSc
 profilepic: profile.png
-position: Data Scientist/Développeur R
+position: Biostatisticien junior
 address: "[Bezons, Île-de-France](https://www.google.com/maps/place/95870+Bezons/data=!4m2!3m1!1s0x47e664161c8482d3:0x40b82c3688b35a0?sa=X&ved=2ahUKEwjapNGXk57oAhUHrxoKHYXADZcQ8gEwDHoECBkQBA)"
 phone: +33 7 51 47 79 25
 email: ngsanogo@gmail.com
@@ -47,11 +47,11 @@ tribble(
 
 ```{r}
 tribble(
-  ~ degree, ~ uni, ~ loc, ~ dates, ~ details,
-  "Site web personnel fait avec le package R blogdown (https://github.com/ngsanogo/ngsanogo.rbind.io).", "ngsanogo.rbind.io", NA, NA, NA,
-  "Application Web en shiny en utilisant le package R Golem (https://github.com/ngsanogo/accidentApp).", "AccidentApp", NA, NA, NA
+  ~ project, ~ link, ~ loc, ~ dates, ~ details,
+  "Site web personnel fait avec le package R blogdown (https://github.com/ngsanogo/ngsanogo.rbind.io).", "ngsanogo.rbind.io", "", "", NA,
+  "Application Web en shiny en utilisant le package R Golem (https://github.com/ngsanogo/corpoaccidentdash).", "corpoaccidentdash", "", "", NA
 ) %>% 
-  detailed_entries(degree, dates, uni, loc, details)
+  detailed_entries(what = project, with = link, where = loc, when = dates, why = details)
 ```
 
 # Formations
