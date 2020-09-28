@@ -18,62 +18,35 @@ editor_options:
 ---
 
 ```{r setup, include=FALSE}
-library(tidyverse)
 library(vitae)
 knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE, results = "asis")
+options(stringsAsFactors = FALSE)
 ```
 
 # Expériences professionnelles
 
 ```{r}
-tribble(
-  ~ role, ~ company, ~ loc, ~ dates, ~ details,
-  "Data manager - Statisticien", "Assistance Publique – Hôpitaux de Paris (AP-HP)", "Boulogne-Billancourt, France", "Avril 2019 - Auj.", "Toutes mes missions de data manager",
-  "Data manager - Statisticien", "Assistance Publique – Hôpitaux de Paris (AP-HP)", "Boulogne-Billancourt, France", "Avril 2019 - Auj.", "Rédaction de plan d'analyse statistique",
-  "Data manager - Statisticien", "Assistance Publique – Hôpitaux de Paris (AP-HP)", "Boulogne-Billancourt, France", "Avril 2019 - Auj.", "Analyse statistique",
-  "Data manager", "Assistance Publique – Hôpitaux de Paris (AP-HP)", "Boulogne-Billancourt, France", "Sept. 2017 - Mars 2019", "Création d'eCRF",
-  "Data manager", "Assistance Publique – Hôpitaux de Paris (AP-HP)", "Boulogne-Billancourt, France", "Sept. 2017 - Mars 2019", "Développement d'algorithme de contrôle de cohérence en R",
-  "Data manager", "Assistance Publique – Hôpitaux de Paris (AP-HP)", "Boulogne-Billancourt, France", "Sept. 2017 - Mars 2019", "Développement de packages R",
-  "Data manager", "Assistance Publique – Hôpitaux de Paris (AP-HP)", "Boulogne-Billancourt, France", "Sept. 2017 - Mars 2019", "Développement d'application en Shiny",
-  "Data manager", "Assistance Publique – Hôpitaux de Paris (AP-HP)", "Boulogne-Billancourt, France", "Sept. 2017 - Mars 2019", "Reporting en Sweave (R + LaTeX)",
-  "Data manager (stage de fin d’études)", "Assistance Publique – Hôpitaux de Paris (AP-HP)", "Boulogne-Billancourt, France", "Févr. 2017 - Août 2017", "Création d'eCRF",
-  "Data manager (stage de fin d’études)", "Assistance Publique – Hôpitaux de Paris (AP-HP)", "Boulogne-Billancourt, France", "Févr. 2017 - Août 2017", "Développement d'algorithme de contrôle de cohérence en R",
-  "Data manager (stage de fin d’études)", "Assistance Publique – Hôpitaux de Paris (AP-HP)", "Boulogne-Billancourt, France", "Févr. 2017 - Août 2017", "Reporting en Sweave (R + LaTeX)"
-)  %>% 
+read.csv2("./data/professional_experience.csv") %>% 
   detailed_entries(with = company, where = loc, what = role, when = dates, why = details)
 ```
 
-# Projets personnels
+# Expérience de consultant 
 
 ```{r}
-tribble(
-  ~ project, ~ link, ~ loc, ~ dates, ~ details,
-  "Site web personnel fait avec le package R blogdown (https://github.com/ngsanogo/ngsanogo.rbind.io).", "ngsanogo.rbind.io", "", "", NA,
-  "Application Web en shiny en utilisant le package R Golem (https://github.com/ngsanogo/corpoaccidentdash).", "corpoaccidentdash", "", "", NA
-) %>% 
-  detailed_entries(what = project, with = link, where = loc, when = dates, why = details)
+read.csv2("./data/consulting_experience.csv") %>% 
+  detailed_entries(with = company, where = loc, what = role, when = dates, why = details)
 ```
 
 # Formations
 
 ```{r}
-tribble(
-  ~ degree, ~ uni, ~ loc, ~ dates, ~ details,
-  "Master 2 en ingénierie mathématique appliquée aux sciences du vivant", "Université Paris Descartes", "Paris, France", "Sept. 2016 - Sept. 2017", "Mathématiques appliquées, Biostatistique, Base de données, Receuil de données, Programmation",
-  "Licence mathématiques, parcours modélisation et simulation", "Université Paris Descartes", "Paris, France", "Sept. 2014 - Sept. 2015", "Mathématiques, Probabilité, Statistique"
-) %>% 
+read.csv2("./data/education_background.csv") %>% 
   detailed_entries(degree, dates, uni, loc, details)
 ```
 
 # Compétences, Informatiques et Langues
 
 ```{r}
-tribble(
-  ~ type, ~ details,
-  "Compétences", "Mathématiques appliquées, statistiques, programmation, data management, receuil de données.",
-  "Informatiques", "R, Python, C/C++, MySQL, Git, HTML/CSS, LaTeX, Limesurvey, RedCap, CleanWeb, Linux",
-  "Langues", "Français, langue maternelle",
-  "Langues", "Anglais, niveau intermédiaire (B2 CECR)"
-) %>%
+read.csv2("./data/skills.csv") %>%
   detailed_entries(what = type, why = details)
 ```
