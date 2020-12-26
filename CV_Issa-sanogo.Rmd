@@ -37,6 +37,13 @@ read.csv2("./data/consulting_experience.csv") %>%
   detailed_entries(with = company, where = loc, what = role, when = dates, why = details)
 ```
 
+# Projets open source 
+
+```{r}
+read.csv2("./data/opensource_project.csv") %>% 
+  detailed_entries(with = company, where = loc, what = role, when = dates, why = details)
+```
+
 # Formations
 
 ```{r}
