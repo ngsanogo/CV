@@ -19,41 +19,70 @@ editor_options:
 
 ```{r setup, include=FALSE}
 library(vitae)
-knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE, results = "asis")
+knitr::opts_chunk$set(
+  echo = FALSE,
+  warning = FALSE,
+  message = FALSE,
+  results = "asis"
+)
 options(stringsAsFactors = FALSE)
 ```
 
 # Expériences professionnelles
 
-```{r}
-read.csv2("./data/professional_experience.csv") %>% 
-  detailed_entries(with = company, where = loc, what = role, when = dates, why = details)
+```{r exp pro}
+read.csv2(file = "./data/professional_experience.csv", fileEncoding = "UTF-8") %>%
+  detailed_entries(
+    with = company,
+    where = loc,
+    what = role,
+    when = dates,
+    why = details
+  )
 ```
 
 # Expérience de consultant 
 
-```{r}
-read.csv2("./data/consulting_experience.csv") %>% 
-  detailed_entries(with = company, where = loc, what = role, when = dates, why = details)
+```{r exp consult}
+read.csv2(file = "./data/consulting_experience.csv", fileEncoding = "UTF-8") %>%
+  detailed_entries(
+    with = company,
+    where = loc,
+    what = role,
+    when = dates,
+    why = details
+  )
 ```
 
 # Projets open source 
 
-```{r}
-read.csv2("./data/opensource_project.csv") %>% 
-  detailed_entries(with = company, where = loc, what = role, when = dates, why = details)
+```{r open proj}
+read.csv2(file = "./data/opensource_project.csv", fileEncoding = "UTF-8") %>%
+  detailed_entries(
+    with = company,
+    where = loc,
+    what = role,
+    when = dates,
+    why = details
+  )
 ```
 
 # Formations
 
-```{r}
-read.csv2("./data/education_background.csv") %>% 
-  detailed_entries(with = uni, where = loc, what = degree, when = dates, why = details)
+```{r formation}
+read.csv2(file = "./data/education_background.csv", fileEncoding = "UTF-8") %>%
+  detailed_entries(
+    with = uni,
+    where = loc,
+    what = degree,
+    when = dates,
+    why = details
+  )
 ```
 
 # Compétences, Informatiques et Langues
 
-```{r}
-read.csv2("./data/skills.csv") %>%
+```{r comp}
+read.csv2(file = "./data/skills.csv", fileEncoding = "UTF-8") %>%
   detailed_entries(what = type, why = details)
 ```

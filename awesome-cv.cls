@@ -84,10 +84,12 @@
 % Needed to deal hyperlink
 \RequirePackage[hidelinks,unicode]{hyperref}
 \hypersetup{%
-  pdftitle={},
-  pdfauthor={},
-  pdfsubject={},
-  pdfkeywords={}
+  pdffitwindow=false,     % window fit to page when opened
+  pdfstartview={Fit},    % fits the width of the page to the window
+  pdftitle={CV of N'Gouro dit Issa Sanogo},
+  pdfauthor={N'Gouro dit Issa Sanogo},
+  pdfsubject={Curriculum vitæ},
+  pdfkeywords={CV, Resume}
 }
 
 
