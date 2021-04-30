@@ -3,9 +3,9 @@ name: N'Gouro dit Issa SANOGO
 date: "`r format(Sys.time(), '%B, %Y')`"
 qualifications: MSc
 profilepic: profile.png
-position: Data scientist/Développeur R
+position: Data scientist
 address: "[Bezons, Île-de-France](https://www.google.com/maps/place/95870+Bezons/data=!4m2!3m1!1s0x47e664161c8482d3:0x40b82c3688b35a0?sa=X&ved=2ahUKEwjapNGXk57oAhUHrxoKHYXADZcQ8gEwDHoECBkQBA)"
-phone: +33 7 51 47 79 25
+phone: +33
 email: ngsanogo@gmail.com
 www: ngsanogo.rbind.io
 github: ngsanogo
@@ -26,63 +26,69 @@ knitr::opts_chunk$set(
   results = "asis"
 )
 options(stringsAsFactors = FALSE)
+lan <- "en"
 ```
 
-# Expériences professionnelles
+`r ifelse(lan == "en", print("# Professional experiences"), print("# Expériences professionnelles"))`
 
 ```{r exp pro}
-read.csv2(file = "./data/professional_experience.csv", fileEncoding = "UTF-8") %>%
+read.csv(file = "./data/professional_experience.csv", fileEncoding = "UTF-8") %>%
+  filter(langue == lan) %>% 
   detailed_entries(
     with = company,
     where = loc,
     what = role,
-    when = dates,
+    when = date,
     why = details
   )
 ```
 
-# Expérience de consultant 
+`r ifelse(lan == "en", print("# Consulting experience"), print("# Expérience de consultant"))`
 
 ```{r exp consult}
-read.csv2(file = "./data/consulting_experience.csv", fileEncoding = "UTF-8") %>%
+read.csv(file = "./data/consulting_experience.csv", fileEncoding = "UTF-8") %>%
+  filter(langue == lan) %>% 
   detailed_entries(
     with = company,
     where = loc,
     what = role,
-    when = dates,
+    when = date,
     why = details
   )
 ```
 
-# Projets open source 
+`r ifelse(lan == "en", print("# Open source projects"), print("# Projets open source"))`
 
 ```{r open proj}
-read.csv2(file = "./data/opensource_project.csv", fileEncoding = "UTF-8") %>%
+read.csv(file = "./data/opensource_project.csv", fileEncoding = "UTF-8") %>%
+  filter(langue == lan) %>% 
   detailed_entries(
     with = company,
     where = loc,
     what = role,
-    when = dates,
+    when = date,
     why = details
   )
 ```
 
-# Formations
+`r ifelse(lan == "en", print("# Educations"), print("# Formations"))`
 
 ```{r formation}
-read.csv2(file = "./data/education_background.csv", fileEncoding = "UTF-8") %>%
+read.csv(file = "./data/education_background.csv", fileEncoding = "UTF-8") %>%
+  filter(langue == lan) %>% 
   detailed_entries(
     with = uni,
     where = loc,
     what = degree,
-    when = dates,
+    when = date,
     why = details
   )
 ```
 
-# Compétences, Informatiques et Langues
+`r ifelse(lan == "en", print("# Skills and Languages"), print("# Compétences, Informatiques et Langues"))`
 
 ```{r comp}
-read.csv2(file = "./data/skills.csv", fileEncoding = "UTF-8") %>%
+read.csv(file = "./data/skills.csv", fileEncoding = "UTF-8") %>%
+  filter(langue == lan) %>% 
   detailed_entries(what = type, why = details)
 ```

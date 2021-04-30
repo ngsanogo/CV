@@ -1,3 +1,5 @@
-"role";"company";"loc";"dates";"details"
-"https://github.com/ngsanogo/corpoaccident";"Corpoaccident";"Stable";"Avril 2019-Auj.";"Package R sur les accidents corporels de la route en France"
-"https://github.com/ngsanogo/corpoaccidentdash";"Corpoaccidentdash";"En développementt";"Avril 2019-Auj.";"Dashboard sur les accidents corporels de la route en utilisant le package golem"
+langue,role,company,loc,date,details
+fr,https://github.com/ngsanogo/corpoaccident,Corpoaccident,Stable,Avril 2019-Auj.,Package R sur les accidents corporels de la route en France
+fr,https://github.com/ngsanogo/corpoaccidentdash,Corpoaccidentdash,En développementt,Avril 2019-Auj.,Dashboard sur les accidents corporels de la route en utilisant le package golem
+en,https://github.com/ngsanogo/corpoaccident,Corpoaccident,Stable,April 2019 – Now,R package on road accidents in France
+en,https://github.com/ngsanogo/corpoaccidentdash,Corpoaccidentdash,In development,April 2019 – Now,Dashboard on road accidents using the golem package

@@ -1,3 +1,5 @@
-"degree";"uni";"loc";"dates";"details"
-"Master 2 en ingénierie mathématique appliquée aux sciences du vivant";"Université Paris Descartes";"Paris, France";"Sept. 2016 - Sept. 2017";"Mathématiques appliquées, Biostatistique, Base de données, Receuil de données, Programmation"
-"Licence mathématiques, parcours modélisation et simulation";"Université Paris Descartes";"Paris, France";"Sept. 2014 - Sept. 2015";"Mathématiques, Probabilité, Statistique"
+langue,degree,uni,loc,date,details
+fr,Master 2 en ingénierie mathématique appliquée aux sciences du vivant,Université de Paris,"Paris, France",Sept. 2016 - Sept. 2017,"Mathématiques appliquées, Biostatistique, Base de données, Receuil de données, Programmation"
+fr,"Licence mathématiques, parcours modélisation et simulation",Université de Paris,"Paris, France",Sept. 2014 - Sept. 2015,"Mathématiques, Probabilité, Statistique"
+en,M.S. in Mathematical engineering applied to life sciences,University of Paris,"Paris, France",Sept. 2016 - Sept. 2017,"Applied mathematics, Biostatistics, Database, Data collection, Programming"
+en,"Bachelor’s degree in mathematics, course in modeling and stimulation",University of Paris,"Paris, France",Sept. 2014 - Sept. 2015,"Mathematics, Probability, Statistics"
