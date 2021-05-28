@@ -1,11 +1,11 @@
 langue,type,details
 fr,Savoir faire,"Mathématiques appliquées, statistiques, programmation, data management, receuil de données."
 fr,Savoir être,"Communication, autonomie, curiosité, proactif, organisé, esprit d’équipe"
-fr,Informatiques,"R, Python, C, MariaDB/MySQL, HTML, CSS, JavaScript, Docker, LaTeX, Markdown, Git, GitHub, LimeSurvey, RedCap, Slack, Confluence, Trello, Ubuntu"
+fr,Informatiques,"R, Python, C, MySQL, Docker, LaTeX, Markdown, Git, GitHub, LimeSurvey, RedCap, Slack, Confluence, Trello, Ubuntu"
 fr,Langues,"Français, langue maternelle"
 fr,Langues,"Anglais, niveau intermédiaire avancée"
 en,Hard skills,"Applied mathematics, statistics, programming, data management, data collection"
 en,Soft skills,"Communication, autonomy, curiosity, proactive, organized, team player"
-en,IT skills,"R, Python, C, MariaDB/MySQL, HTML, CSS, JavaScript, Docker, LaTeX, Markdown, Git, GitHub, LimeSurvey, RedCap, Slack, Confluence, Trello, Ubuntu"
+en,IT skills,"R, Python, C, MySQL, Docker, LaTeX, Markdown, Git, GitHub, LimeSurvey, RedCap, Slack, Confluence, Trello, Ubuntu"
 en,Languages,"French, mother tongue"
 en,Languages,"English, upper intermediate"
