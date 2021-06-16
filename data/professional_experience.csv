@@ -1,21 +1,31 @@
 langue,role,company,loc,date,details
-fr,Data manager - Statisticien,Assistance Publique – Hôpitaux de Paris (AP-HP),"Boulogne-Billancourt, France",Sept. 2017 - Auj.,Analyse de données
-fr,Data manager - Statisticien,Assistance Publique – Hôpitaux de Paris (AP-HP),"Boulogne-Billancourt, France",Sept. 2017 - Auj.,Data management
-fr,Data manager - Statisticien,Assistance Publique – Hôpitaux de Paris (AP-HP),"Boulogne-Billancourt, France",Sept. 2017 - Auj.,Conception d’eCRF (eletronic Case Report Form) avec CleanWEB et REDCap
-fr,Data manager - Statisticien,Assistance Publique – Hôpitaux de Paris (AP-HP),"Boulogne-Billancourt, France",Sept. 2017 - Auj.,Administration de base de données MySQL
-fr,Data manager - Statisticien,Assistance Publique – Hôpitaux de Paris (AP-HP),"Boulogne-Billancourt, France",Sept. 2017 - Auj.,Programmation de rapport d'activité reproductible en R (Rmarkdown ou Sweave)
-fr,Data manager - Statisticien,Assistance Publique – Hôpitaux de Paris (AP-HP),"Boulogne-Billancourt, France",Sept. 2017 - Auj.,Développement et maintenance de packages R en interne
-fr,Data manager - Statisticien,Assistance Publique – Hôpitaux de Paris (AP-HP),"Boulogne-Billancourt, France",Sept. 2017 - Auj.,Développement d'application en Shiny
-fr,Data manager (stage de fin d’études),Assistance Publique – Hôpitaux de Paris (AP-HP),"Boulogne-Billancourt, France",Févr. 2017 - Août 2017,Conception d'eCRF
-fr,Data manager (stage de fin d’études),Assistance Publique – Hôpitaux de Paris (AP-HP),"Boulogne-Billancourt, France",Févr. 2017 - Août 2017,Développement d'algorithme de contrôle de cohérences en R
+fr,Data manager,Assistance Publique – Hôpitaux de Paris (AP-HP),"Boulogne-Billancourt, France",Sept. 2017 - Auj.,Rédaction de plan de datamanagement et de plan de validation
+fr,Data manager,Assistance Publique – Hôpitaux de Paris (AP-HP),"Boulogne-Billancourt, France",Sept. 2017 - Auj.,Conception d’eCRF (eletronic Case Report Form) avec CleanWEB et REDCap
+fr,Data manager,Assistance Publique – Hôpitaux de Paris (AP-HP),"Boulogne-Billancourt, France",Sept. 2017 - Auj.,Programmation de contrôle de cohérence en R 
+fr,Data manager,Assistance Publique – Hôpitaux de Paris (AP-HP),"Boulogne-Billancourt, France",Sept. 2017 - Auj.,Programmation de rapport reproductible en Rmarkdown
+fr,Data manager,Assistance Publique – Hôpitaux de Paris (AP-HP),"Boulogne-Billancourt, France",Sept. 2017 - Auj.,Rapport de data management 
+fr,Data manager,Assistance Publique – Hôpitaux de Paris (AP-HP),"Boulogne-Billancourt, France",Sept. 2017 - Auj.,Extraction des données via les outils de gestion de données 
+fr,Data manager,Assistance Publique – Hôpitaux de Paris (AP-HP),"Boulogne-Billancourt, France",Sept. 2017 - Auj.,Archivage des données 
+fr,Data manager,Assistance Publique – Hôpitaux de Paris (AP-HP),"Boulogne-Billancourt, France",Sept. 2017 - Auj.,Développement et maintenance de packages R
+fr,Data manager,Assistance Publique – Hôpitaux de Paris (AP-HP),"Boulogne-Billancourt, France",Sept. 2017 - Auj.,Développement d'application en Shiny
+fr,Data manager,Assistance Publique – Hôpitaux de Paris (AP-HP),"Boulogne-Billancourt, France",Sept. 2017 - Auj.,Analyse de données
+fr,Data manager,Assistance Publique – Hôpitaux de Paris (AP-HP),"Boulogne-Billancourt, France",Sept. 2017 - Auj.,Administration de base de données MySQL
+fr,Data manager,Assistance Publique – Hôpitaux de Paris (AP-HP),"Boulogne-Billancourt, France",Sept. 2017 - Auj.,Data management
+fr,Data manager (stage de fin d’études),Assistance Publique – Hôpitaux de Paris (AP-HP),"Boulogne-Billancourt, France",Févr. 2017 - Août 2017,Conception d’eCRF (eletronic Case Report Form) avec CleanWEB et REDCap
+fr,Data manager (stage de fin d’études),Assistance Publique – Hôpitaux de Paris (AP-HP),"Boulogne-Billancourt, France",Févr. 2017 - Août 2017,Programmation des contrôles de cohérence en R 
 fr,Data manager (stage de fin d’études),Assistance Publique – Hôpitaux de Paris (AP-HP),"Boulogne-Billancourt, France",Févr. 2017 - Août 2017,Rapport d'activité du CREU IDF 2016
-en,Data manager - Statistician,Public Assistance - Hospitals of Paris (AP-HP),"Boulogne-Billancourt, France",Sept. 2017 – Now,Data analysis
-en,Data manager - Statistician,Public Assistance - Hospitals of Paris (AP-HP),"Boulogne-Billancourt, France",Sept. 2017 – Now,Data management
-en,Data manager - Statistician,Public Assistance - Hospitals of Paris (AP-HP),"Boulogne-Billancourt, France",Sept. 2017 – Now,Design of eCRF (electronic Case Report Form) with CleanWEB and REDCap
-en,Data manager - Statistician,Public Assistance - Hospitals of Paris (AP-HP),"Boulogne-Billancourt, France",Sept. 2017 – Now,MySQL database administration
-en,Data manager - Statistician,Public Assistance - Hospitals of Paris (AP-HP),"Boulogne-Billancourt, France",Sept. 2017 – Now,Programming of reproducible activity report in R (Rmarkdown or Sweave)
-en,Data manager - Statistician,Public Assistance - Hospitals of Paris (AP-HP),"Boulogne-Billancourt, France",Sept. 2017 – Now,Development and maintenance of R packages
-en,Data manager - Statistician,Public Assistance - Hospitals of Paris (AP-HP),"Boulogne-Billancourt, France",Sept. 2017 – Now,Development of applications in Shiny
-en,Data manager (end of studies internship),Public Assistance - Hospitals of Paris (AP-HP),"Boulogne-Billancourt, France",Feb. 2017 – Aug. 2017,eCRF design
-en,Data manager (end of studies internship),Public Assistance - Hospitals of Paris (AP-HP),"Boulogne-Billancourt, France",Feb. 2017 – Aug. 2017,Consistency check algorithm development in R
+en,Data manager,Public Assistance - Hospitals of Paris (AP-HP),"Boulogne-Billancourt, France",Sept. 2017 – Now,Writing of data management and validation plans
+en,Data manager,Public Assistance - Hospitals of Paris (AP-HP),"Boulogne-Billancourt, France",Sept. 2017 – Now,Design of eCRF (eletronic Case Report Form) with CleanWEB and REDCap
+en,Data manager,Public Assistance - Hospitals of Paris (AP-HP),"Boulogne-Billancourt, France",Sept. 2017 – Now,Programming of consistency checks in R 
+en,Data manager,Public Assistance - Hospitals of Paris (AP-HP),"Boulogne-Billancourt, France",Sept. 2017 – Now,Programming of reproducible reports in Rmarkdown
+en,Data manager,Public Assistance - Hospitals of Paris (AP-HP),"Boulogne-Billancourt, France",Sept. 2017 – Now,Data management report 
+en,Data manager,Public Assistance - Hospitals of Paris (AP-HP),"Boulogne-Billancourt, France",Sept. 2017 – Now,Data extraction via data management tools 
+en,Data manager,Public Assistance - Hospitals of Paris (AP-HP),"Boulogne-Billancourt, France",Sept. 2017 – Now,Data archiving 
+en,Data manager,Public Assistance - Hospitals of Paris (AP-HP),"Boulogne-Billancourt, France",Sept. 2017 – Now,Development and maintenance of R packages
+en,Data manager,Public Assistance - Hospitals of Paris (AP-HP),"Boulogne-Billancourt, France",Sept. 2017 – Now,Application development in Shiny
+en,Data manager,Public Assistance - Hospitals of Paris (AP-HP),"Boulogne-Billancourt, France",Sept. 2017 – Now,Data analysis
+en,Data manager,Public Assistance - Hospitals of Paris (AP-HP),"Boulogne-Billancourt, France",Sept. 2017 – Now,MySQL database administration
+en,Data manager,Public Assistance - Hospitals of Paris (AP-HP),"Boulogne-Billancourt, France",Sept. 2017 – Now,Data management
+en,Data manager (end of studies internship),Public Assistance - Hospitals of Paris (AP-HP),"Boulogne-Billancourt, France",Feb. 2017 – Aug. 2017,Design of eCRF (eletronic Case Report Form) with CleanWEB and REDCap
+en,Data manager (end of studies internship),Public Assistance - Hospitals of Paris (AP-HP),"Boulogne-Billancourt, France",Feb. 2017 – Aug. 2017,Programming of consistency checks in R 
 en,Data manager (end of studies internship),Public Assistance - Hospitals of Paris (AP-HP),"Boulogne-Billancourt, France",Feb. 2017 – Aug. 2017,CREU IDF Activity Report 2016
