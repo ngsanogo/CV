@@ -5,7 +5,7 @@ qualifications: MSc
 profilepic: profile.jpeg
 position: Data scientist
 address: "[Bezons, Île-de-France](https://www.google.com/maps/place/95870+Bezons/data=!4m2!3m1!1s0x47e664161c8482d3:0x40b82c3688b35a0?sa=X&ved=2ahUKEwjapNGXk57oAhUHrxoKHYXADZcQ8gEwDHoECBkQBA)"
-phone: +33 7 51 47 79 25
+phone: +33 6 51 98 52 79
 email: ngsanogo@gmail.com
 www: ngsanogo.rbind.io
 github: ngsanogo
@@ -33,7 +33,7 @@ lan <- "fr"
 
 ```{r exp pro}
 read.csv(file = "./data/professional_experience.csv", fileEncoding = "UTF-8") %>%
-  filter(langue == lan) %>% 
+  filter(langue == lan & role != "Data manager (stage de fin d’études)") %>% 
   detailed_entries(
     with = company,
     where = loc,
@@ -43,9 +43,9 @@ read.csv(file = "./data/professional_experience.csv", fileEncoding = "UTF-8") %>
   )
 ```
 
-`r ifelse(lan == "en", print("# Consulting experience"), print("# Expérience de consultant"))`
 
-```{r exp consult}
+```{r exp consult, eval=FALSE}
+#`r ifelse(lan == "en", print("# Consulting experience"), print("# Expérience de consultant"))`
 read.csv(file = "./data/consulting_experience.csv", fileEncoding = "UTF-8") %>%
   filter(langue == lan) %>% 
   detailed_entries(
@@ -57,9 +57,9 @@ read.csv(file = "./data/consulting_experience.csv", fileEncoding = "UTF-8") %>%
   )
 ```
 
-`r ifelse(lan == "en", print("# Open source projects"), print("# Projets open source"))`
 
-```{r open proj}
+```{r open proj, eval=FALSE}
+#`r ifelse(lan == "en", print("# Open source projects"), print("# Projets open source"))`
 read.csv(file = "./data/opensource_project.csv", fileEncoding = "UTF-8") %>%
   filter(langue == lan) %>% 
   detailed_entries(
@@ -75,7 +75,7 @@ read.csv(file = "./data/opensource_project.csv", fileEncoding = "UTF-8") %>%
 
 ```{r formation}
 read.csv(file = "./data/education_background.csv", fileEncoding = "UTF-8") %>%
-  filter(langue == lan) %>% 
+  filter(langue == lan & grepl(degree, pattern = "^master", ignore.case = TRUE)) %>% 
   detailed_entries(
     with = uni,
     where = loc,
