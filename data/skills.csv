@@ -1,14 +1,14 @@
 langue,type,details
 fr,Savoir faire,"Statistiques, programmation, gestion de données, recueil de données"
 fr,Savoir être,"Communication, autonomie, curiosité, proactif, organisé, esprit d’équipe"
-fr,Langage de programmation,"R, Python, HTML/CSS, JavaScript, SQL"
-fr, Application : "Git, GitHub, LaTeX, Markdown, LimeSurvey, RedCap, Tableau, Docker"
+fr,Langage de programmation,"R, Python, SQL, HTML/CSS/JavaScript, Markdown, LaTeX"
+fr,Application,"Tableau, Git, GitHub, Docker, LimeSurvey, RedCap, CleanWeb, Jira, Confluence, Trello"
 fr,Langues,"Français, langue maternelle"
 fr,Langues,"Anglais, niveau intermédiaire avancée"
 language,type,details
 en,Hard skills, "Statistics, programming, data management, data collection"
 en,Soft skills, "Communication, autonomy, curiosity, proactive, organized, team spirit"
-en,Programming language, "R, Python, HTML/CSS, JavaScript, SQL"
-en, Application : "Git, GitHub, LaTeX, Markdown, LimeSurvey, RedCap, Tableau, Docker"
+en,Programming language, "R, Python, SQL, HTML/CSS/JavaScript, Markdown, LaTeX"
+en, Application : "Tableau, Git, GitHub, Docker, LimeSurvey, RedCap, CleanWeb, Jira, Confluence, Trello"
 en,Languages, "French, mother tongue"
 en,Languages, "English, advanced intermediate level"
