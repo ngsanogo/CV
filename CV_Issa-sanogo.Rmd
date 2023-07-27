@@ -4,13 +4,12 @@ date: "`r format(Sys.time(), '%B, %Y')`"
 qualifications: MSc
 profilepic: profile.jpeg
 position: Data scientist
-address: "[Bezons, Île-de-France](https://www.google.com/maps/place/95870+Bezons/data=!4m2!3m1!1s0x47e664161c8482d3:0x40b82c3688b35a0?sa=X&ved=2ahUKEwjapNGXk57oAhUHrxoKHYXADZcQ8gEwDHoECBkQBA)"
+address: "[Bezons, Île-de-France](https://goo.gl/maps/vPFx9nZWzKZzKzhY8)"
 phone: +33 6 51 98 52 79
 email: ngsanogo@gmail.com
 www: ngsanogo.rbind.io
-github: ngsanogo
 linkedin: ngsanogo
-twitter: ngsanogo
+github: ngsanogo
 headcolor: 414141
 output: vitae::awesomecv
 editor_options: 
