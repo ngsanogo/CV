@@ -2,14 +2,15 @@
 name: N'Gouro dit Issa SANOGO
 date: "`r format(Sys.time(), '%B, %Y')`"
 qualifications: MSc
-profilepic: profile.jpeg
-position: Data scientist
+profilepic: profile.JPG
+position: Data engineer/Data manager
 address: "[Bezons, Île-de-France](https://goo.gl/maps/vPFx9nZWzKZzKzhY8)"
 phone: +33 6 51 98 52 79
-email: ngsanogo@gmail.com
+email: ngsanogo@proton.me
 www: ngsanogo.rbind.io
 linkedin: ngsanogo
 github: ngsanogo
+aboutme: "Je possède une expertise avancée dans la conception de data warehouses, le développement d'ETL, ainsi que la gestion et l'analyse de données. Ma maîtrise s'étend à divers langages de programmation, notamment R, Python et SQL, en plus de ma compétence dans l'utilisation d'outils de visualisation tels que Tableau et PowerBI."
 headcolor: 414141
 output: vitae::awesomecv
 editor_options: 
