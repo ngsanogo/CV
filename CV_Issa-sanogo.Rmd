@@ -4,13 +4,13 @@ date: "`r format(Sys.time(), '%B, %Y')`"
 qualifications: MSc
 profilepic: profile.JPG
 position: Data engineer/Data manager
-address: "[Bezons, Île-de-France](https://goo.gl/maps/vPFx9nZWzKZzKzhY8)"
+address: "[Île-de-France, France](https://maps.app.goo.gl/rMKeW5kvxcZnwoj89)"
 phone: +33 6 51 98 52 79
 email: ngsanogo@proton.me
 www: ngsanogo.rbind.io
 linkedin: ngsanogo
 github: ngsanogo
-aboutme: "Je possède une expertise avancée dans la conception de data warehouses, le développement d'ETL, ainsi que la gestion et l'analyse de données. Ma maîtrise s'étend à divers langages de programmation, notamment R, Python et SQL, en plus de ma compétence dans l'utilisation d'outils de visualisation tels que Tableau et PowerBI."
+aboutme: "Je possède une expertise avancée dans la conception de data warehouse, du développement d'ETL à la gestion et l'analyse de données. Ma maîtrise s'étend à divers langages de programmation, notamment R, Python et SQL, en plus de ma compétence dans l'utilisation d'outils de visualisation tels que Tableau et PowerBI."
 headcolor: 414141
 output: vitae::awesomecv
 editor_options: 
@@ -34,34 +34,6 @@ lan <- "fr"
 ```{r exp pro}
 read.csv(file = "./data/professional_experience.csv", fileEncoding = "UTF-8") %>%
   filter(langue == lan & role != "Data manager (stage de fin d’études)") %>% 
-  detailed_entries(
-    with = company,
-    where = loc,
-    what = role,
-    when = date,
-    why = details
-  )
-```
-
-
-```{r exp consult, eval=FALSE}
-#`r ifelse(lan == "en", print("# Consulting experience"), print("# Expérience de consultant"))`
-read.csv(file = "./data/consulting_experience.csv", fileEncoding = "UTF-8") %>%
-  filter(langue == lan) %>% 
-  detailed_entries(
-    with = company,
-    where = loc,
-    what = role,
-    when = date,
-    why = details
-  )
-```
-
-
-```{r open proj, eval=FALSE}
-#`r ifelse(lan == "en", print("# Open source projects"), print("# Projets open source"))`
-read.csv(file = "./data/opensource_project.csv", fileEncoding = "UTF-8") %>%
-  filter(langue == lan) %>% 
   detailed_entries(
     with = company,
     where = loc,
