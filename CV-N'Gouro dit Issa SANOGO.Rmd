@@ -1,0 +1,66 @@
+---
+name: N'Gouro dit Issa SANOGO
+date: "`r format(Sys.time(), '%B, %Y')`"
+qualifications: MSc
+profilepic: profile.JPG
+position: Data engineer/Data manager
+address: "[Île-de-France, France](https://maps.app.goo.gl/rMKeW5kvxcZnwoj89)"
+phone: +33 6 51 98 52 79
+email: ngsanogo@proton.me
+www: ngsanogo.rbind.io
+linkedin: ngsanogo
+github: ngsanogo
+aboutme: "Fort d'une expertise approfondie en ingénierie de données, je maitrise la création d'entrepôts de données, du développement des processus ETL/ELT à la gestion et à l'analyse de données. Mes compétences s'étendent à plusieurs langages informatiques, notamment R, Python, SQL et NoSQL, accompagnées d'une maîtrise dans l'utilisation d'outils de visualisation tels que Tableau et PowerBI."
+headcolor: 414141
+output: vitae::awesomecv
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+library(vitae)
+knitr::opts_chunk$set(
+  echo = FALSE,
+  warning = FALSE,
+  message = FALSE,
+  results = "asis"
+)
+options(stringsAsFactors = FALSE)
+lan <- "fr"
+```
+
+`r ifelse(lan == "en", print("# Professional experiences"), print("# Expériences professionnelles"))`
+
+```{r exp pro}
+read.csv(file = "./data/professional_experience.csv", fileEncoding = "UTF-8") %>%
+  filter(langue == lan & role != "Data manager (stage de fin d’études)") %>% 
+  detailed_entries(
+    with = company,
+    where = loc,
+    what = role,
+    when = date,
+    why = details
+  )
+```
+
+`r ifelse(lan == "en", print("# Educations"), print("# Formations"))`
+
+```{r formation}
+read.csv(file = "./data/education_background.csv", fileEncoding = "UTF-8") %>%
+  filter(langue == lan & grepl(degree, pattern = "^master", ignore.case = TRUE)) %>% 
+  detailed_entries(
+    with = uni,
+    where = loc,
+    what = degree,
+    when = date,
+    why = details
+  )
+```
+
+`r ifelse(lan == "en", print("# Skills and Languages"), print("# Compétences, Informatiques et Langues"))`
+
+```{r comp}
+read.csv(file = "./data/skills.csv", fileEncoding = "UTF-8") %>%
+  filter(langue == lan) %>% 
+  detailed_entries(what = type, why = details)
+```
