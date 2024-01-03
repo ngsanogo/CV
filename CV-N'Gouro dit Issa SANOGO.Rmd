@@ -10,7 +10,7 @@ email: ngsanogo@proton.me
 www: ngsanogo.rbind.io
 linkedin: ngsanogo
 github: ngsanogo
-aboutme: "Fort d'une expertise approfondie en ingénierie de données, je maitrise la création d'entrepôts de données, du développement des processus ETL/ELT à la gestion et à l'analyse de données. Mes compétences s'étendent à plusieurs langages informatiques, notamment R, Python, SQL et NoSQL, accompagnées d'une maîtrise dans l'utilisation d'outils de visualisation tels que Tableau et PowerBI."
+aboutme: "Fort d'une expertise approfondie en ingénierie de données, je maitrise la création d'entrepôts de données, du développement des processus ETL/ELT à la gestion et à l'analyse de données. Mes compétences s'étendent à plusieurs langages de programmation notamment R et Python, ainsi que plusieurs SGBD en SQL et en NoSQL et plusieurs outils de visualisation tels que Tableau et PowerBI."
 headcolor: 414141
 output: vitae::awesomecv
 editor_options: 
