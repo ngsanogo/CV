@@ -3,14 +3,14 @@ name: N'Gouro dit Issa SANOGO
 date: "`r format(Sys.time(), '%B, %Y')`"
 qualifications: MSc
 profilepic: profile.JPG
-position: Data engineer/Data manager
+position: Data Product Owner / Chef de projet Data
 address: "[Île-de-France, France](https://maps.app.goo.gl/rMKeW5kvxcZnwoj89)"
 phone: +33 6 51 98 52 79
 email: ngsanogo@proton.me
 www: ngsanogo.rbind.io
 linkedin: ngsanogo
 github: ngsanogo
-aboutme: "Fort d'une expertise approfondie en ingénierie de données, je maitrise la création d'entrepôts de données, du développement des processus ETL/ELT à la gestion et à l'analyse de données. Mes compétences s'étendent à plusieurs langages de programmation notamment R et Python, ainsi que plusieurs SGBD en SQL et en NoSQL et plusieurs outils de visualisation tels que Tableau et PowerBI."
+aboutme: "Fort d'une expertise approfondie en ingénierie des données et d'une maîtrise dans la conception d'entrepôts de données, le développement de processus ETL/ELT et la gestion ainsi que l'analyse de données, je suis prêt à mettre mes compétences au service de votre entreprise. Je suis profondément convaincu que mes solides compétences techniques et de gestion de projet, mon expérience professionnelle diversifiée et mes qualités personnelles me permettront d'apporter une valeur ajoutée significative à votre entreprise."
 headcolor: 414141
 output: vitae::awesomecv
 editor_options: 
@@ -32,8 +32,8 @@ lan <- "fr"
 `r ifelse(lan == "en", print("# Professional experiences"), print("# Expériences professionnelles"))`
 
 ```{r exp pro}
-read.csv(file = "./data/professional_experience.csv", fileEncoding = "UTF-8") %>%
-  filter(langue == lan & role != "Data manager (stage de fin d’études)") %>% 
+read.csv(file = "./data/professional_experience.csv", fileEncoding = "UTF-8") |>
+  vitae::filter(langue == lan & role != "Data manager (stage de fin d’études)") |> 
   detailed_entries(
     with = company,
     where = loc,
@@ -46,8 +46,9 @@ read.csv(file = "./data/professional_experience.csv", fileEncoding = "UTF-8") %>
 `r ifelse(lan == "en", print("# Educations"), print("# Formations"))`
 
 ```{r formation}
-read.csv(file = "./data/education_background.csv", fileEncoding = "UTF-8") %>%
-  filter(langue == lan & grepl(degree, pattern = "^master", ignore.case = TRUE)) %>% 
+read.csv(file = "./data/education_background.csv", fileEncoding = "UTF-8") |>
+  vitae::filter(langue == lan) |>
+  slice(1:2) |> 
   detailed_entries(
     with = uni,
     where = loc,
@@ -57,10 +58,11 @@ read.csv(file = "./data/education_background.csv", fileEncoding = "UTF-8") %>%
   )
 ```
 
-`r ifelse(lan == "en", print("# Skills and Languages"), print("# Compétences, Informatiques et Langues"))`
+`r ifelse(lan == "en", print("# Technical stack and Languages"), print("# Stack technique et Langues"))`
 
 ```{r comp}
-read.csv(file = "./data/skills.csv", fileEncoding = "UTF-8") %>%
-  filter(langue == lan) %>% 
+read.csv(file = "./data/skills.csv", fileEncoding = "UTF-8") |>
+  vitae::filter(langue == lan) |>
+  slice(-c(1:2)) |> 
   detailed_entries(what = type, why = details)
 ```
