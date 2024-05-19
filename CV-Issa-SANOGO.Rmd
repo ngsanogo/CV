@@ -3,7 +3,7 @@ name: N'Gouro dit Issa SANOGO
 date: "`r format(Sys.time(), '%B, %Y')`"
 qualifications: MSc
 profilepic: profile.JPG
-position: Data Product Owner / Chef de projet Data
+position: Data engineer / Data Product Owner
 address: "[Île-de-France, France](https://maps.app.goo.gl/rMKeW5kvxcZnwoj89)"
 phone: +33 6 51 98 52 79
 email: ngsanogo@proton.me
