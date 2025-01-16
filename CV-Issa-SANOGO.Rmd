@@ -3,14 +3,14 @@ name: N'Gouro dit Issa SANOGO
 date: "`r format(Sys.time(), '%B, %Y')`"
 qualifications: MSc
 profilepic: profile.JPG
-position: Data engineer / Data Product Owner
+position: Product Owner Database
 address: "[Île-de-France, France](https://maps.app.goo.gl/rMKeW5kvxcZnwoj89)"
 phone: +33 6 51 98 52 79
 email: ngsanogo@proton.me
 www: ngsanogo.rbind.io
 linkedin: ngsanogo
 github: ngsanogo
-aboutme: "Fort d'une expertise approfondie en ingénierie des données et d'une maîtrise dans la conception d'entrepôts de données, le développement de processus ETL/ELT et la gestion ainsi que l'analyse de données, je suis prêt à mettre mes compétences au service de votre entreprise. Je suis profondément convaincu que mes solides compétences techniques et de gestion de projet, mon expérience professionnelle diversifiée et mes qualités personnelles me permettront d'apporter une valeur ajoutée significative à votre entreprise."
+aboutme: "Fort d'une expertise approfondie en ingénierie des données, en gestion ainsi que l'analyse de données, je suis prêt à mettre mes compétences au service de votre entreprise. Je suis profondément convaincu que mes solides compétences techniques et de gestion de projet, mon expérience professionnelle diversifiée et mes qualités personnelles me permettront d'apporter une valeur ajoutée significative à votre entreprise."
 headcolor: 414141
 output: vitae::awesomecv
 editor_options: 
